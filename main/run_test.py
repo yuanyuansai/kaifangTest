@@ -39,7 +39,7 @@ class RunTest:
         method = "POST"
 
         import requests
-        res = requests.post(url, data='account=15117961952&password=2569D419BFEA999FF13FD1F7F4498B89&role_type=1',cookies=cookies, headers=headers, verify=False).json()
+        res = requests.post(url, data='account=15117961980&password=2569D419BFEA999FF13FD1F7F4498B89&role_type=2',cookies=cookies, headers=headers, verify=False).json()
         # print(res['data']['token'])
         return res
 
