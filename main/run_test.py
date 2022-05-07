@@ -29,7 +29,7 @@ class RunTest:
         }
         self.headers['authorization']=self.userDetail['data']['token']
     def Login(self):
-        url = "https://newapi-test.1911edu.com/api/auth/login_by_password"
+        url = "https://newapi.1911edu.com/api/auth/login_by_password"
         cookies = None
         headers = {
             "device-model": "1",
@@ -39,7 +39,8 @@ class RunTest:
         method = "POST"
 
         import requests
-        res = requests.post(url, data='account=15117961980&password=2569D419BFEA999FF13FD1F7F4498B89&role_type=2',cookies=cookies, headers=headers, verify=False).json()
+        res = requests.post(url, data='account=13681319134&password=2569D419BFEA999FF13FD1F7F4498B89&role_type=2',cookies=cookies, headers=headers, verify=False).json()
+
         # print(res['data']['token'])
         return res
 
